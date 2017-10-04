@@ -1,0 +1,78 @@
+/* Imported Fonts */
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url(fonts/ProximaNova-Bold.otf);
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url(fonts/ProximaNova-Reg.otf);
+}
+
+@font-face {
+	font-family: 'Proxima Nova Light';
+	src: url(fonts/ProximaNova-Light.otf);
+}
+
+@font-face {
+	font-family: 'Proxima Nova SBold';
+	src: url(fonts/ProximaNova-SBold.otf);
+}
+
+@font-face {
+	font-family: 'Proxima Nova Thin';
+	src: url(fonts/ProximaNova-Thin.otf);
+}
+
+/* Type Classes */
+h1, h2, h3, h4, h5, h6, p, a {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+	font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+p {
+	font-family: 'Proxima Nova', sans-serif;
+}
+
+h1 {
+	font-size: 55px;
+}
+
+h2 {
+	font-size: 1.875em;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	font-size: 1.25em;
+	letter-spacing: 0.05em;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+p {
+	font-size: 17px;
+	text-align: left;
+}
+
+a {
+	font-size: 1.125em;
+	font-family: 'Proxima Nova', sans-serif;
+}
+
+a:hover {
+	color: #66b89f;
+}

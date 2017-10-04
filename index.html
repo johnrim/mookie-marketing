@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mookie Digital</title>
+
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="type.css"/>
+	<link rel="stylesheet" type="text/css" href="containers.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css?v=2.0.0"/>
+	<link rel="stylesheet" type="text/css" href="mobile.css"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <meta property="og:image" content="http://d20sv3ae6ysj58.cloudfront.net/assets/open_graph_logo.jpg"/> -->
+
+	<meta property="og:description" content="A full-service digital agency"/>
+
+	<meta property="og:url" content="https:/www.mookie.io"/>
+
+	<meta property="og:title" content="Mookie" />
+
+	<!-- <meta name="google-site-verification" content="B0P7iopZtFUiG4pCsuOV5pbzFKotSIv_X7_ZLyDBB98" /> -->
+
+	<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+</head>
+
+<body ng-app="syndioMarketingApp">
+	<div id="navbar" ng-controller="NavbarCtrl" class="navbar clearfix">
+		<div class="navbar__logo">
+			<a ng-click="navigateTo('hero')">
+				<img id="navbar__logo__light" src="assets/logo_mookie.svg"/>
+				<img id="navbar__logo__dark" src="assets/logo_dark.svg"/>
+			</a>
+		</div>
+
+		<div class="navbar__menu">
+			<div class="navbar__menu__hamburger" ng-click="toggleHamburger()">
+				<i id="hamburger-icon" class="fa fa-bars navbar__menu__hamburger__icon"></i>
+				<div id="hamburger-content" class="navbar__menu__hamburger__content">
+					<ul>
+						<a ng-click="navigateTo('team')"><li>Team</li></a>
+						<a ng-click="navigateTo('contact')"><li>Contact</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="navbar__menu__normal">
+				<a class="navbar__menu__link" ng-click="navigateTo('team')">Team</a>
+				<a class="navbar__menu__link" ng-click="navigateTo('contact')">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<div ng-view></div>
+
+	<script src="jquery-1.11.3.js"></script>
+	<script src="angular.js"></script>
+	<script src="angular-route.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

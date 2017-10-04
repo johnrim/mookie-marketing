@@ -1,0 +1,239 @@
+<div class="lightbox" ng-show="isModalShowing">
+	<div class="modal">
+		<div class="modal__top full-container">
+			<img class="modal__top__cancel" src="http://d20sv3ae6ysj58.cloudfront.net/assets/cancel.png" ng-click="closeModal()"/>
+		</div>
+		<div class="modal__body full-container">
+			<form id="beta-gform" method="post" class="modal__body__form" action="https://script.google.com/macros/s/AKfycbz4bSWWDOQs6oqTNmg0hKD0AiJWMoLgiJjYE_ATE62UqyNDu4c/exec">
+				<h1>Sign-Up for Beta</h1>
+				<label>Full Name *</label>
+				<input id="beta-gform-name" name="name" type="text" required>
+				<label>Email *</label>
+				<input id="beta-gform-email" name="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+				<label>I'm interested in (optional)</label>
+				<input id="beta-gform-email" name="condition" type="text" placeholder="conditions and/or diseases">
+				<button id="beta-submit" type="submit">Sign Up</button>
+			</form>
+			<div id="beta-confirmation" class="modal__body__confirmation">
+				<h2>Thank you - you're on the list!</h2>
+				<p>As soon as our beta is live, we’ll make sure to notify you via email.<br><br>Feel free to send any questions to info@syndiohealth.com.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section id="hero" class="hero">
+	<div class="narrow-container">
+		<div class="hero__text">
+			<h1>A Full-service Digital Agency</h1>
+			<h3>We're a team of digital afficionados...</h3>
+			<img ng-click="scrollTo('about')" src="http://d20sv3ae6ysj58.cloudfront.net/assets/down-arrow.png"/>
+		</div>
+	</div>
+</section>
+
+<section class="vision">
+	<div class="container">
+		<div class="full-container clearfix">
+			<div class="vision__heading">
+				<h2>Vision</h2>
+			</div>
+			<div class="vision__text">
+				<h4>A simple healthcare experience: people and information connected seamlessly</h4>
+			</div>
+		</div>
+		<div class="full-container clearfix">
+			<div class="vision__heading">
+				<h2>Mission</h2>
+			</div>
+			<div class="vision__text">
+				<h4>To empower people's health through connection</h4>
+			</div>
+		</div>
+		<div class="full-container clearfix">
+			<div class="vision__heading vision__heading__values">
+				<h2>Values</h2>
+			</div>
+			<div class="vision__text">
+				<div class="vision__text__icon">
+					<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/health.png"/>
+					<div class="vision__text__icon__caption">
+						<h4>Health</h4>
+					</div>
+				</div>
+				<div class="vision__text__icon">
+					<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/integrity.png"/>
+					<div class="vision__text__icon__caption">
+						<h4>Integrity</h4>
+					</div>
+				</div>
+				<div class="vision__text__icon">
+					<img class="vision__text__icon--scale-down" src="http://d20sv3ae6ysj58.cloudfront.net/assets/passion.png"/>
+					<div class="vision__text__icon__caption">
+						<h4>Passion</h4>
+					</div>
+				</div>
+				<div class="vision__text__icon">
+					<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/exploration.png"/>
+					<div class="vision__text__icon__caption">
+						<h4>Exploration</h4>
+					</div>
+				</div>
+				<div class="vision__text__icon">
+					<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/belief-1.png"/>
+					<div class="vision__text__icon__caption">
+						<h4>Belief</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="team" class="team">
+	<div class="narrow-container clearfix">
+		<h1>Core Team</h1>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/jose.png"/>
+			<h5>Jose Castellanos</h5>
+			<h6>CEO</h6>
+			<div class="team__bio">
+				<p>Our fearless leader, Jose Castellanos (aka. El Jefe), is the CEO and captain of our Syndio crew. A global business developer and commercial strategy and segmented execution consultant, Jose has what it takes to steer this ship to the promise land.</p>
+			</div>
+			<a href="https://www.linkedin.com/in/josecastellanos/" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a>
+		</div>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/john.png"/>
+			<h5>John Rim</h5>
+			<h6>Product Manager</h6>
+			<div class="team__bio">
+				<p>John Rim is a digital product professional from Chicago, IL currently working as a product manager with Syndio. He graduated from Northwestern University in 2012 with a B.A. in Biological Sciences and International Studies.</p>
+			</div>
+			<a href="https://www.linkedin.com/in/johnrim/" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a>
+		</div>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/josh.png"/>
+			<h5>Josh Trangle</h5>
+			<h6>Product Designer</h6>
+			<div class="team__bio">
+				<p>Leader of the design team wolf pack, Josh is a true renaissance man. World traveler, kindergarten teacher, nonprofit manager, and thin-crust pizza lover, turned UX/UI designer, he brings Syndio&#8217;s overall vision of connecting people to a trustworthy health platform right to your screen. </p>
+			</div>
+			<a href="https://www.linkedin.com/in/joshtrangle/" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a>
+		</div>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/manu.png"/>
+			<h5>Manu Gupta</h5>
+			<h6>Full-Stack Developer</h6>
+			<div class="team__bio">
+				<p>Just your everyday ping-pong ninja, Manu Gupta is a University of Michigan alum with a Master&#8217;s degree in Information Science. He is undoubtedly the best man-u for the job.</p>
+			</div>
+			<a href="https://www.linkedin.com/in/manugupt1/" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a>
+		</div>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/rachel.png"/>
+			<h5>Rachel Rub</h5>
+			<h6>Business Development Director</h6>
+			<div class="team__bio--shorten">
+				<p>Rachel is a rising Junior at NYU where she studies Business and Political Economy. Rachel is all about making positive impacts which she achieves through sustainable practices, traveling, music, and food (yes, cooking but mostly eating).</p>
+			</div>
+			<a href="https://www.linkedin.com/in/rachel-rub-98b24b116/" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a>
+		</div>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/ilham.png"/>
+			<h5>Ilham Nurjadin</h5>
+			<h6>Full-Stack Developer</h6>
+			<div class="team__bio">
+				<p>The man, the myth, the legend, Ilham Nurjadin hails from the beautiful land of Jakarta, Indonesia. He currently studies Computer Science at Northwestern University and pursuing a Financial Economics certificate from the Kellogg School of Management.</p>
+			</div>
+			<a href="https://www.linkedin.com/in/ilham-nurjadin-4a4282112" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a>
+		</div>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/taylor.png"/>
+			<h5>Taylor Hooper</h5>
+			<h6>Director of PR</h6>
+			<div class="team__bio">
+				<p>Just your friendly neighborhood hipster, Taylor is a University of South Carolina graduate with a dual degree in PR and Entertainment Management. She&#8217;s the woman-behind-the-curtain for Syndio&#8217;s social media and other PR ventures.</p>
+			</div>
+<!-- 				<a href="#" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a> -->
+		</div>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/tony.png"/>
+			<h5>Tony Park</h5>
+			<h6>Full-Stack Developer</h6>
+			<div class="team__bio">
+				<p>Tony &#8220;hardcore&#8221; Park is a loyal University of Michigan alumnus with a degree in Computer Science. When he&#8217;s not kicking butt and taking names as a software engineer, he&#8217;s kicking soccer balls and taking down coworkers in FIFA.</p>
+			</div>
+			<a href="#" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a>
+		</div>
+		<div class="one-third">
+			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/lynn.png"/>
+			<h5>Lynn Schmitt</h5>
+			<h6>User Researcher</h6>
+			<div class="team__bio">
+				<p>Lynn Schmitt is Syndio&#8217;s UX Designer where she applies UX research methods and tools to solve user experience concerns and create human-centered designs. A graduate of Loyola University in Chicago, Lynn brings the Chicago accent and upbeat Chicago spirit to the team.</p>
+			</div>
+			<a href="https://www.linkedin.com/in/lynn-schmitt-ab330155/" target="_blank">
+				<i class="fa fa-linkedin team__linkedin"></i>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section id="contact" class="contact">
+	<div class="narrow-container clearfix">
+		<h1>Contact Us</h1>
+
+		<div class="contact__form">
+			<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycby8uD5KPTf34vIlf9qr-HfDkdWFBDcRfkpVEuz9COd4n11NZxSZ/exec">
+				<h4>Name</h4>
+				<input id="name" type="text" name="name" required/>
+				<h4>Email</h4>
+				<input id="email" type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="a valid email address contains an @ and a domain such as gmail.com or yahoo.com"/>
+				<h4>Message</h4>
+				<textarea id="condition" type="text" name="condition" required></textarea>
+				<button id="contact-submit" type="submit">Submit</button>
+			</form>
+			<div style="display:none;" id="thankyou_message" class="contact__form__thank-you">
+	    		<h3>Your submission was successfully submitted.</h3>
+	  		</div>
+  		</div>
+
+  		<div class="contact__info">
+  			<h4>info@syndiohealth.com</h4>
+  			<h4>(773) 295-4942</h4>
+  		</div>
+	</div>
+</section>
+
+<section id="thank-you" class="thank-you">
+	<h1>We'll be in touch!</h1>
+	<div class="narrow-container">
+		<p>Thanks for reaching out! Connection is vital for us in achieving our goal of empowering people to make informed decisions. Someone will be in touch with you soon.</p>
+		<p>We invite you to sign up for our beta launch and to reach out with any further questions.</p>
+		<p>Sincerely,</p>
+		<p>The Syndio Team</p>
+		<img src="./assets/syndio_health_logo.svg"/>
+	</div>
+</section>
+
+<section id="footer" class="footer">
+	<div class="container">
+		<h6>Syndio &copy; 2017</h6>
+	</div>
+</section>
