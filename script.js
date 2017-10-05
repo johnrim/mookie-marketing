@@ -2,6 +2,7 @@
 var app = angular.module("syndioMarketingApp", ["ngRoute"]);
 
 app.config(function($routeProvider) {
+
     $routeProvider.when("/", {
         controller: "HomeCtrl",
         templateUrl: "templates/home.html"
@@ -12,12 +13,28 @@ app.config(function($routeProvider) {
     })
 });
 
+// Nav items hover effect
+1
+$('.link__1').hover(function() {
+    $('.highlight1').toggleClass("hover")
+});
+
+$('.link__2').hover(function() {
+    $('.highlight2').toggleClass("hover")
+});
+
+// $('.link__3').hover(function() {
+//     $('.highlight3').toggleClass("hover")
+// });
+
+
 // When the user scrolls the webpage, the navigation bar changes color
 $(window).scroll(function() {
 	if ($(window).scrollTop() > 1) {
 		// Change the navigation bar background color if the window is not at the top of the page while scrolling
 		$('#navbar').addClass('navbar--change-color');
 		$('.navbar__menu__link').addClass('navbar__menu__link--change-color');
+        $('.contact__email p').addClass('navbar__menu__link--change-color');
         $('#hamburger-icon').addClass('navbar__menu__hamburger__icon--change-color');
 		$('#navbar__logo__dark').show();
 		$('#navbar__logo__light').hide();
@@ -25,6 +42,7 @@ $(window).scroll(function() {
 		// Revert the navigation bar background color to the original if the window is at the top of the page
 		$('#navbar').removeClass('navbar--change-color');
 		$('.navbar__menu__link').removeClass('navbar__menu__link--change-color');
+        $('.contact__email p').removeClass('navbar__menu__link--change-color');
         $('#hamburger-icon').removeClass('navbar__menu__hamburger__icon--change-color');
 		$('#navbar__logo__dark').hide();
 		$('#navbar__logo__light').show();
@@ -33,7 +51,7 @@ $(window).scroll(function() {
 
 app.controller("NavbarCtrl", function($scope, $location) {
     // Store sections belonging to each page in arrays
-    homeSections = ['hero', 'team', 'contact'];
+    homeSections = ['hero', 'services', 'team', 'contact'];
     recommendSections = ['recommend'];
 
     // When a link is clicked, the page scrolls (with animation) or routes to the relevant element

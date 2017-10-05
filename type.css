@@ -70,9 +70,5 @@ p {
 
 a {
 	font-size: 1.125em;
-	font-family: 'Proxima Nova', sans-serif;
-}
-
-a:hover {
-	color: #66b89f;
+	font-family: 'Proxima Nova Bold', sans-serif;
 }

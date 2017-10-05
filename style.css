@@ -1,4 +1,8 @@
 /* General Classes */
+::-webkit-scrollbar {
+display: none;
+}
+
 * {
 	box-sizing: border-box;
 	color: #fff;
@@ -161,6 +165,7 @@ a:hover {
 
 .navbar--change-color {
 	background-color: #ffffff;
+	opacity: .8;
 	border-bottom: 1pt solid #dddddd;
 }
 
@@ -181,9 +186,21 @@ a:hover {
 	width: auto;
 }
 
+.navbar .contact__email {
+	width: 260px;
+	height: 22px;
+	float: right;
+	margin-top: 12px;
+	margin-left: 1em;
+}
+
+.navbar .contact__email p {
+	font-size: 1em;
+	font-family: 'Proxima Nova Light';
+}
+
 .navbar__menu {
-	width: 75%;
-	float: left;
+	float: right;
 	text-align: right;
 	margin-top: 12px;
 }
@@ -198,16 +215,44 @@ a:hover {
 	color: #fff;
 }
 
-.navbar__menu__normal a:nth-child(2), .navbar__menu__normal a:nth-child(3) {
+.navbar__menu__normal a:nth-child(3), .navbar__menu__normal a:nth-child(5) {
 	margin-left: 2rem;
 }
 
-.navbar a.navbar__menu__link--change-color {
-	color: #4a4a4a;
+.navbar__menu__normal span {
+	display: none;
+	height: 18px;
+	background-color: #00AA78;
+	z-index: -1;
+	position: absolute;
+	top: 30px;
 }
 
-.navbar__menu a:hover {
-	color: #66b89f;
+.navbar__menu__normal span.highlight1{
+	width: 72px;
+	margin-left: -74px;
+}
+
+.navbar__menu__normal span.highlight2{
+	width: 48px;
+	margin-left: -46px;
+}
+
+/* .navbar__menu__normal span.highlight3 {
+	width: 70px;
+	margin-left: -67px;
+ }*/
+
+.navbar a.navbar__menu__link--change-color {
+	color: #1F1F1F!important;
+}
+
+.navbar .contact__email p.navbar__menu__link--change-color{
+	color: #1F1F1F!important;
+}
+
+.navbar__menu__normal span.hover {
+	display: inline-block;
 }
 
 /* Hamburger Menu (for mobile version navbar of site) */
@@ -270,7 +315,7 @@ a:hover {
 /* Hero Section */
 .hero {
 	width: 100%;
-	background: url('assets/hero.jpg');
+	background: url('assets/hero_2.jpg');
 	/*background-color: grey;*/
 	background-size: cover;
 
@@ -366,33 +411,37 @@ a:hover {
 }
 
 /* Vision Section */
-.vision {
+.services {
 	width: 100%;
 	background-color: #F4F6F8;
-	padding: 60px 0px 50px 0px;
-	/*margin: 0px;*/
+	padding: 2em 0;
+	text-align: center;
+	height: 600px;
 }
 
-.vision h2, .vision h4 {
-	color: #4a4a4a;
-	margin-bottom: 50px;
+.services h1, .services h2, .services h4 {
+	color: #1F1F1F;
 }
 
-.vision__heading {
+.services h1 {
+margin-bottom: 2rem;
+}
+
+.services__heading {
 	width: 20%;
 	float: left;
 }
 
-.vision__text {
+.services__text {
 	width: 80%;
 	float: left;
 }
 
-.vision__text h4 {
+.services__text h4 {
 	transform: translateY(10px);
 }
 
-.vision__text__icon {
+.services__text__icon {
 	width: 110px;
 	height: 120px;
 	display: inline-block;
@@ -401,82 +450,44 @@ a:hover {
 	position: relative;
 }
 
-.vision__text__icon img {
+.services__text__icon img {
 	width: 100px;
 	height: auto;
 	position: absolute;
 	transform: translateX(-50%);
 }
 
-.vision__text__icon .vision__text__icon--scale-down {
+.services__text__icon .services__text__icon--scale-down {
 	width: 75px;
 	height: auto;
 }
 
-.vision__text__icon__caption {
+.services__text__icon__caption {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
 	width: 100%;
 }
 
-.vision__text__icon__caption h4 {
+.services__text__icon__caption h4 {
 	position: relative;
 	transform: translateY(45px);
 }
 
-/* About Us (Why We Started) Section */
-.about {
-	width: 100%;
-	background-color: #fff;
-	padding: 50px 0px;
-	text-align: center;
-}
-
-.about h1, h5, p {
-	color: #4a4a4a;
-}
-
-.about h1 {
-	margin-bottom: 20px;
-}
-
-.about p {
-	margin-bottom: 18px;
-	font-size: 20px;
-}
-
-.about__picture {
-	width: 40%;
-	float: left;
-	padding-right: 20px;
-	text-align: center;
-}
-
-.about__picture img {
-	width: 100%;
-}
-
-.about__picture__position {
-	color: #66b89f;
-}
-
-.about__bio__top, .about__bio__bottom {
-	width: 60%;
-	float: left;
-}
-
 /* Team & Advisors Section */
 .team {
-	background-color: #e8edf0;
-	padding: 50px 0px;
+	background-color: #fff;
+	padding: 2em 0;
+}
+
+.team h1 {
 	text-align: center;
 }
 
 .team .one-third {
-	padding: 15px 20px;
+	padding: 0 1rem 1.5rem 0;
 	overflow: hidden;
-	height: 600px;
+	/*height: 600px;*/
 }
 
 .team__bio {
@@ -492,168 +503,70 @@ a:hover {
 .team img {
 	width: 100%;
 	text-align: center;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
+  	margin-bottom: 8px;
 }
 
-.team h1, .team h5, .team p, .advisors h1, .advisors h5, .advisors p {
-	color: #4a4a4a;
+.team img:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
-.team h6 {
-	color: #66b89f;
-	margin-bottom: 5px;
+.team h1, .team h6, .team p {
+	color: #1F1F1F;
+}
+
+.team h1 {
+	margin-bottom: 2rem;
+}
+
+.team h5 {
+	color: #F73F0C;
+	display: inline-block;
+	margin-bottom: .125rem;
 }
 
 .team p {
-	margin-bottom: 5px;
+	margin-bottom: .25rem;
 }
 
-.team__linkedin, .advisors__linkedin {
+.team a {
+	float: right;
+}
+
+.team__linkedin {
 	color: #fff;
-	background-color: #4a4a4a;
+	background-color: #1F1F1F;
 	padding: 5px;
 	border-radius: 5px;
 	transition: all 0.3s ease;
 }
 
 .team__linkedin:hover {
-	background-color: #66b89f;
+	background-color: #F73F0C;
 	cursor: pointer;
-}
-
-.advisors__linkedin:hover {
-	background-color: #1b4465;
-	cursor: pointer;
-}
-
-.advisors {
-	width: 100%;
-	background-color: #fff;
-	text-align: center;
-	padding: 50px 0px;
-}
-
-.advisors h6 {
-	text-align: left;
-}
-
-.advisors .one-fourth {
-	height: 400px;
-	padding: 20px 15px;
-}
-
-.advisors img {
-	width: 100%;
-}
-
-.advisors h6 {
-	color: #1b4465;
-	font-size: 16px;
-	margin-bottom: 5px;
-}
-
-/* Contact Us */
-.contact {
-	background-color: #dee3e5;
-	padding: 40px 0px 70px 0px;
-	text-align: center;
-}
-
-.contact h1, h3, h4 {
-	color: #000;
-}
-
-.contact h1 {
-	margin-bottom: 20px;
-}
-
-.contact__form, .contact__info {
-	width: 50%;
-	float: left;
-	text-align: left;
-}
-
-.contact__info {
-	padding-left: 70px;
-}
-
-.contact__info h4 {
-	font-family: 'Proxima Nova Bold';
-}
-
-.contact__form input, .contact__form textarea {
-	width: 100%;
-	border: none;
-	background-color: #fff;
-	font-size: 18px;
-	color: #4a4a4a;
-	padding: 10px;
-	margin-bottom: 13px;
-}
-
-.contact__form textarea {
-	height: 180px;
-	resize: none;
-	font-family: 'Proxima Nova';
-}
-
-.contact__form input:focus, .contact__form textarea:focus {
-	box-shadow: 0px 0px 5px 1px #66b89f;
-	border: 1px solid #66b89f;
-}
-
-.contact__form button {
-	width: 100%;
-	background-color: #66b89f;
-	color: #fff;
-	font-family: 'Proxima Nova';
-	border: none;
-	padding: 10px 0px;
-	font-size: 18px;
-	transition: all 0.5s ease;
-	box-shadow: inset 0px 0px 0px #fff;
-}
-
-.contact__form button:hover {
-	cursor: pointer;
-	box-shadow: inset 450px 0px 0px #fff;
-	color: #66b89f;
-}
-
-.contact__form button:active {
-	transform: translateY(5px);
-}
-
-/* Thank You Section (for Contact Form) */
-.thank-you {
-	width: 100%;
-	background-color: #fff;
-	text-align: center;
-	padding: 100px 0px;
-	display: none;
-}
-
-.thank-you .narrow-container {
-	padding: 0px 100px;
-	text-align: left;
-}
-
-.thank-you h1, .thank-you p {
-	color: #3f3f3f;
-	margin-bottom: 20px;
-	font-family: 'Proxima Nova';
-	font-weight: bold;
 }
 
 /* Footer Section */
 .footer {
-	background-color: #fff;
+	background-color: #1F1F1F;
 	text-align: center;
 	padding: 5px 0px;
 }
 
+.footer img {
+	height: 40px;
+	width: auto;
+}
+
 .footer h6 {
 	font-size: 14px;
-	color: #4a4a4a;
+	color: #FFF;
 }
 
 /* Recommend a Treatment */

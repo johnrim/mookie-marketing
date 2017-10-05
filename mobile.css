@@ -1,31 +1,31 @@
 /* Mobile Responsiveness */ 
 @media(max-width: 1200px) {
-	.vision .container {
+	.services .container {
 		padding: 0px 20px;
 	}
 }
 
 @media(max-width: 1060px) {
-	.vision__heading {
+	.services__heading {
 		width: 100%;
 		text-align: center;
 	}
 
-	.vision__heading h2 {
+	.services__heading h2 {
 		margin-bottom: 0px;
 	}
 
-	.vision__text {
+	.services__text {
 		width: 100%;
 		text-align: center;
 		position: relative;
 	}
 
-	.vision__heading__values {
+	.services__heading__values {
 		margin-bottom: 22px;
 	}
 
-	.vision__text__icon {
+	.services__text__icon {
 		margin: 0px;
 	}
 }
