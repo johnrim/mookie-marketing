@@ -1,191 +1,158 @@
-<div class="lightbox" ng-show="isModalShowing">
-	<div class="modal">
-		<div class="modal__top full-container">
-			<img class="modal__top__cancel" src="http://d20sv3ae6ysj58.cloudfront.net/assets/cancel.png" ng-click="closeModal()"/>
-		</div>
-		<div class="modal__body full-container">
-			<form id="beta-gform" method="post" class="modal__body__form" action="https://script.google.com/macros/s/AKfycbz4bSWWDOQs6oqTNmg0hKD0AiJWMoLgiJjYE_ATE62UqyNDu4c/exec">
-				<h1>Sign-Up for Beta</h1>
-				<label>Full Name *</label>
-				<input id="beta-gform-name" name="name" type="text" required>
-				<label>Email *</label>
-				<input id="beta-gform-email" name="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-				<label>I'm interested in (optional)</label>
-				<input id="beta-gform-email" name="condition" type="text" placeholder="conditions and/or diseases">
-				<button id="beta-submit" type="submit">Sign Up</button>
-			</form>
-			<div id="beta-confirmation" class="modal__body__confirmation">
-				<h2>Thank you - you're on the list!</h2>
-				<p>As soon as our beta is live, we’ll make sure to notify you via email.<br><br>Feel free to send any questions to info@syndiohealth.com.</p>
-			</div>
-		</div>
-	</div>
-</div>
-
 <section id="hero" class="hero">
 	<div class="narrow-container">
 		<div class="hero__text">
-			<h1>A Full-service Digital Agency</h1>
-			<h3>We're a team of digital afficionados...</h3>
-			<img ng-click="scrollTo('services')" src="http://d20sv3ae6ysj58.cloudfront.net/assets/down-arrow.png"/>
+			<h1>A Full-Service Digital Agency</h1>
+			<h3>We're a team of ex-Googlers and digital experts</h3>
+			<img ng-click="scrollTo('philosophy')" src="http://d20sv3ae6ysj58.cloudfront.net/assets/down-arrow.png"/>
 		</div>
+	</div>
+</section>
+
+<section id="philosophy" class="philosophy">
+	<div class="extra-narrow-container clearfix">
+		<h1>Our Philosophy</h1>
+		<div class="divider">
+		</div>
+		<article>
+			<h4>Our philosophy is simple: good business means business baked in values.</h4>
+
+			<h4>At Mookie, we believe in transparency, trust, and a focus on your goals and your customers. We use data-driven insights to grow your profitability, maximize your web-presence, construct your brand, and drive sales.</h4>
+
+			<h4>You know your business better than anyone else.</h4>
+
+			<h4>Let us partner with you to help people get a taste of what you have to offer.</h4>
+		</article>
 	</div>
 </section>
 
 <section id="services" class="services">
 	<div class="narrow-container clearfix">
 		<h1>Services</h1>
-			<div class="services__heading">
-				<h2>Vision</h2>
-			</div>
-			<div class="services__text">
-				<h4>A simple healthcare experience: people and information connected seamlessly</h4>
-			</div>
+		<div class="divider">
 		</div>
-		<div class="full-container clearfix">
-			<div class="services__heading">
-				<h2>Mission</h2>
+		<div class="services__content">
+			<div class="one-half services__card">
+				<article>
+					<span class = "heading">Google</span>
+					<span class = "subheading">Adwords and Analytics</span>
+				</article>
+				<figcaption class="overlay">
+					<span class = "heading">Google</span>
+					<span class = "subsubheading">Get people to bite… profitably</span>
+					<ul>
+						<li>Goal-Driven / ROI Consultation</li>
+						<li>Research and Discovery</li>
+						<li>Account Setup</li>
+						<li>Account Management</li>
+						<li>Monthly Reporting</li>
+					</ul>
+				</figcaption>
 			</div>
-			<div class="services__text">
-				<h4>To empower people's health through connection</h4>
+			<div class="one-half services__card">
+				<article>
+					<span class = "heading">Search Engine</span>
+					<span class = "subheading">Optimization</span>
+				</article>
+				<figcaption class="overlay">
+					<span class = "heading">Search Engine</span>
+					<span class = "subsubheading">Get people to bite... organically</span>
+					<ul>
+						<li>Baseline Assessment</li>
+						<li>Keyword Research</li>
+						<li>Strategy and Content Planning</li>
+						<li>SEO Implementation</li>
+						<li>SEO Web Content Support / Development</li>
+						<li>Ongoing Support and Management</li>
+					</ul>
+				</figcaption>
 			</div>
-		</div>
-		<div class="full-container clearfix">
-			<div class="services__heading services__heading__values">
-				<h2>Values</h2>
+			<div class="one-half services__card">
+				<article>
+					<span class = "heading">Web</span>
+					<span class = "subheading">Design and Development</span>
+				</article>
+				<figcaption class="overlay">
+					<span class = "heading">Web</span>
+					<span class = "subsubheading">Give people a taste of your products/services</span>
+					<ul>
+						<li>Brand Design</li>
+						<li>Responsive Web Design</li>
+						<li>Full-Stack Web Development</li>
+						<li>Lead Generation &amp; E-Commerce Platforms</li>
+					</ul>
+				</figcaption>
 			</div>
-			<div class="services__text">
-				<div class="services__text__icon">
-					<div class="services__text__icon__caption">
-						<h4>Health</h4>
-					</div>
-				</div>
-				<div class="services__text__icon">
-					<div class="services__text__icon__caption">
-						<h4>Integrity</h4>
-					</div>
-				</div>
-				<div class="services__text__icon">
-					<div class="services__text__icon__caption">
-						<h4>Passion</h4>
-					</div>
-				</div>
-				<div class="services__text__icon">
-					<div class="services__text__icon__caption">
-						<h4>Exploration</h4>
-					</div>
-				</div>
-				<div class="services__text__icon">
-					<div class="services__text__icon__caption">
-						<h4>Belief</h4>
-					</div>
-				</div>
+			<div class="one-half services__card">
+				<article>
+					<span class = "heading">Social Media</span>
+					<span class = "subheading">Management</span>
+				</article>
+				<figcaption class="overlay">
+					<span class = "heading">Social Media</span>
+					<span class = "subsubheading">Give people a taste of your brand</span>
+					<ul>
+						<li>Welcoming Engagement</li>
+						<li>Understanding / Defining Audience</li>
+						<li>Research</li>
+						<li>Account Setup and Management</li>
+						<li>Content Creation</li>
+
+
+
+
+
+
+					</ul>
+				</figcaption>
 			</div>
-		</div>
+		</div>	
 	</div>
 </section>
 
 <section id="team" class="team">
 	<div class="narrow-container clearfix">
 		<h1>Team</h1>
-		<div class="one-third">
+		<div class="divider">
+		</div>
+		<div class="team__content">
+		<div class="one-fourth">
 			<img src="assets/rob_photo.jpg">
 			<h5>Rob Castellanos</h5>
-			<a href="assets/avery_photo.jpg" target="_blank">
+			<a class="social" href="https://www.linkedin.com/in/robertocastellanos/" target="_blank">
 				<i class="fa fa-linkedin team__linkedin"></i>
 			</a>
-			<h6>CEO and Managing Partner</h6>
-<!-- 			<div class="team__bio">
-				<p>Our fearless leader, Jose Castellanos (aka. El Jefe), is the CEO and captain of our Syndio crew. A global business developer and commercial strategy and segmented execution consultant, Jose has what it takes to steer this ship to the promise land.</p>
-			</div> -->
-
+			<h6>Digital Marketing Lead<br>CEO</h6>
 		</div>
-		<div class="one-third">
+		<div class="one-fourth">
 			<img src="assets/avery_photo.jpg"/>
 			<h5>Avery Cohen</h5>
-			<a href="https://www.linkedin.com/in/averycohen/" target="_blank">
+			<a class="social" href="https://www.linkedin.com/in/averycohen/" target="_blank">
 				<i class="fa fa-linkedin team__linkedin"></i>
 			</a>
-			<h6>SEO and Marketing</h6>
-<!-- 			<div class="team__bio">
-				<p>John Rim is a digital product professional from Chicago, IL currently working as a product manager with Syndio. He graduated from Northwestern University in 2012 with a B.A. in Biological Sciences and International Studies.</p>
-			</div> -->
+			<h6>SEO Specialist</h6>
 		</div>
-		<div class="one-third">
+		<div class="one-fourth">
 			<img src="assets/shaily_photo.jpg"/>
 			<h5>Shaily Hakimian</h5>
-			<a href="https://www.linkedin.com/in/joshtrangle/" target="_blank">
+			<a class="social" href="https://www.linkedin.com/in/hakimian45/" target="_blank">
 				<i class="fa fa-linkedin team__linkedin"></i>
 			</a>
-			<h6>Social Media Manager</h6>
-<!-- 			<div class="team__bio">
-				<p>Leader of the design team wolf pack, Josh is a true renaissance man. World traveler, kindergarten teacher, nonprofit manager, and thin-crust pizza lover, turned UX/UI designer, he brings Syndio&#8217;s overall services of connecting people to a trustworthy health platform right to your screen. </p>
-			</div> -->
+			<h6>Social Media Specialist</h6>
 		</div>
-		<div class="one-third">
-			<img src="http://d20sv3ae6ysj58.cloudfront.net/assets/manu.png"/>
-			<h5>Jason Thomas</h5>
-			<a href="https://www.linkedin.com/in/manugupt1/" target="_blank">
-				<i class="fa fa-linkedin team__linkedin"></i>
-			</a>
-			<h6>Full-Stack Developer</h6>
-<!-- 			<div class="team__bio">
-				<p>Just your everyday ping-pong ninja, Manu Gupta is a University of Michigan alum with a Master&#8217;s degree in Information Science. He is undoubtedly the best man-u for the job.</p>
-			</div> -->
-		</div>
-		<div class="one-third">
+		<div class="one-fourth">
 			<img src="assets/john_photo.jpg"/>
 			<h5>John Rim</h5>
-			<a href="https://www.linkedin.com/in/rachel-rub-98b24b116/" target="_blank">
+			<a class="social" href="https://www.linkedin.com/in/johnrim/" target="_blank">
 				<i class="fa fa-linkedin team__linkedin"></i>
 			</a>
-			<h6>Design and Development</h6>
-<!-- 			<div class="team__bio--shorten">
-				<p>Rachel is a rising Junior at NYU where she studies Business and Political Economy. Rachel is all about making positive impacts which she achieves through sustainable practices, traveling, music, and food (yes, cooking but mostly eating).</p>
-			</div> -->
+			<h6>Creative Technologist</h6>
+		</div>
 		</div>
 	</div>
 </section>
 
-<!-- <section id="contact" class="contact">
-	<div class="narrow-container clearfix">
-		<h1>Contact Us</h1>
-
-		<div class="contact__form">
-			<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycby8uD5KPTf34vIlf9qr-HfDkdWFBDcRfkpVEuz9COd4n11NZxSZ/exec">
-				<h4>Name</h4>
-				<input id="name" type="text" name="name" required/>
-				<h4>Email</h4>
-				<input id="email" type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="a valid email address contains an @ and a domain such as gmail.com or yahoo.com"/>
-				<h4>Message</h4>
-				<textarea id="condition" type="text" name="condition" required></textarea>
-				<button id="contact-submit" type="submit">Submit</button>
-			</form>
-			<div style="display:none;" id="thankyou_message" class="contact__form__thank-you">
-	    		<h3>Your submission was successfully submitted.</h3>
-	  		</div>
-  		</div>
-
-  		<div class="contact__info">
-  			<h4>info@syndiohealth.com</h4>
-  			<h4>(773) 295-4942</h4>
-  		</div>
-	</div>
-</section> -->
-
-<!-- <section id="thank-you" class="thank-you">
-	<h1>We'll be in touch!</h1>
-	<div class="narrow-container">
-		<p>Thanks for reaching out! Connection is vital for us in achieving our goal of empowering people to make informed decisions. Someone will be in touch with you soon.</p>
-		<p>We invite you to sign up for our beta launch and to reach out with any further questions.</p>
-		<p>Sincerely,</p>
-		<p>The Syndio Team</p>
-		<img src="./assets/syndio_health_logo.svg"/>
-	</div>
-</section> -->
-
 <section id="footer" class="footer">
-	<img src="assets/logo_mookie.svg" class="footer__logo"></img>
+	<img src="assets/logo_knockout_pink.svg" class="footer__logo"></img>
 	<div class="container">
 		<h6>Mookie &copy; 2017</h6>
 	</div>

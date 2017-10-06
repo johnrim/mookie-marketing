@@ -37,26 +37,53 @@
 }
 
 @media(max-width: 950px) {
+	.hero {
+		height: 500px;
+	}
+
 	.hero__text {
 		width: 100%;
 		padding: 180px 50px 0px 50px;
 	}
 
-	.hero__form {
-		width: 100%;
-		padding: 70px 50px 80px 50px;
+	.services span.heading, h1 {
+		font-size: 3em;
 	}
 
-	.contact {
-		padding-left: 20px;
-		padding-right: 20px;
+	.services article span.subheading, h3 {
+		font-size: 1.5em;
+	}
+
+	.hero__text img {
+		margin-top: 120px;
+	}
+
+	.navbar .contact {
+		margin-right: 2em;
+	}
+
+	.navbar .contact p {
+		font-size: 1em;
 	}
 }
 
-@media(max-width: 935px) {
-	.about {
-		padding: 40px 20px;
+@media(max-width: 900px) {
+	.services span.heading, h1 {
+		font-size: 2.875em;
 	}
+
+	.services article span.subheading, h3 {
+		font-size: 1.5em;
+	}
+
+	.navbar .contact {
+		margin-top: 1em;
+	}
+
+	.navbar .contact p {
+		font-size: .8em;
+	}
+
 }
 
 @media(max-width: 850px) {
@@ -75,20 +102,7 @@
 	}
 }
 
-@media(max-width: 770px) {
-	.hero__text h1 {
-		font-size: 45px;
-	}
-
-	.hero__text h3 {
-		font-size: 25px;
-	}
-}
-
 @media(max-width: 760px) {
-	.navbar__logo, .navbar__menu {
-		width: 50%;
-	}
 
 	.navbar__menu__normal {
 		display: none;
@@ -96,6 +110,29 @@
 
 	.navbar__menu__hamburger {
 		display: inline-block;
+	}
+
+	.navbar .contact {
+		margin-top: .5em;
+	}
+
+	.services span.heading, h1 {
+		font-size: 2.125em;
+	}
+
+	.services article span.subheading, h3 {
+		font-size: 1.375em;
+	}
+
+	.hero {
+		height: 375px;
+	}
+	
+	.hero__text {
+		padding-top: 140px;
+	}
+	.hero__text img {
+		margin-top: 80px;
 	}
 }
 
@@ -107,75 +144,68 @@
 	.team .one-third {
 		height: 610px;
 	}
+
+	.hero__text {
+		padding-top: 120px;
+	}
+	.hero__text img {
+		margin-top: 60px;
+		width: 5em;
+	}
+
 }
 
 @media(max-width: 675px) {
-	.about__bio__bottom {
-		clear: both;
-		width: 100%;
-	}
-
-	.contact .contact__form {
-		width: 100%;
-	}
-
-	.contact__form__thank-you {
-		text-align: center;
-	}
-
-	.contact .contact__info {
-		width: 100%;
-		padding-top: 20px;
-		padding-left: 0px;
-		text-align: center;
-	}
-
-	.thank-you {
-		padding: 40px 0px;
-	}
 }
 
 @media(max-width: 617px) {
 	.hero .narrow-container {
 		padding: 0px;
 	}
+
+	.services span.heading, h1 {
+		font-size: 1.875em;
+	}
+
+	.services article span.subheading, h3 {
+		font-size: 1.25em;
+	}
+
+	.divider {
+		width: 300px;
+	}
+
+	.navbar .contact {
+		margin-right: 1em;
+	}
+
+	#navbar__logo__light {
+		height: 30px
+	}
+	#navbar__logo__dark {
+		height: 30px;
+	}
 }
 
 @media(max-width: 600px) {
-	h1 {
-		font-size: 40px;
-	}
 
-	.modal {
-		width: 90%;
-		margin-top: 100px;
-	}
-
-	.modal__body {
-		width: 80%;
-	}
-
-	.about h5:nth-child(3) {
-		margin-bottom: 15px;
-	}
-
-	.about__picture {
-		width: 100%;
-	}
-
-	.about__picture img {
-		width: 275px;
-	}
-
-	.about__bio__top {
-		clear: both;
-		width: 100%;
-	}
 }
 
 @media(max-width: 550px) {
-	.advisors h5, .advisors h6 {
-		font-size: 16px;
+	.one-half {
+		width: 100%;
+	}
+
+	.one-fourth {
+		width: 100%;
+	}
+
+	.services span.heading{
+		font-size: 2.875em;
+	}
+
+	.services article span.subheading{
+		font-size: 1.5em;
 	}
 }
 
@@ -186,43 +216,23 @@
 }
 
 @media(max-width: 520px) {
-	.hero__text h1 {
-		font-size: 35px;
-	}
-
-	.hero__text h3 {
-		font-size: 20px;
-	}
-
-	.hero__text button {
-		font-size: 18px;
-	}
 
 	.hero__text img {
-		width: 100px;
+		width: 4em;
 	}
 }
 
 @media(max-width: 500px) {
-	.navbar {
-		padding: 20px;
+	.navbar, .footer {
+		padding: 8px 16px 0 16px;
 	}
 
-	.hero__text button {
-		width: 100%;
-		padding-left: 0px;
-		padding-right: 0px;
+	.footer img {
+		height: 30px;
 	}
 }
 
 @media(max-width: 450px) {
-	.contact h3 {
-		font-size: 20px;
-	}
-
-	.contact textarea {
-		height: 120px;
-	}
 }
 
 @media(max-width: 430px) {
@@ -236,6 +246,15 @@
 	
 	.team .one-third {
 		height: 640px;
+	}
+
+	.navbar .contact {
+		margin-top: 0;
+		height: auto;
+	}
+
+	.navbar .contact p {
+		font-size: .8em;
 	}
 }
 
@@ -257,21 +276,25 @@
 	.hero__text button {
 		font-size: 16px;
 	}
+
+	.divider {
+		width: 250px;
+	}
+	
+	.philosophy {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.philosophy h4 {
+		font-size: 1.125em;
+	}
 }
 
 @media(max-width: 400px) {
 	.hero__text h1 {
 		font-size: 30px;
 		margin-bottom: 30px;
-	}
-
-	.about p {
-		font-size: 18px;
-	}
-
-	.thank-you h1 {
-		font-size: 28px;
-	}
 }
 
 @media(max-width: 330px) {

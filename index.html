@@ -33,8 +33,8 @@
 	<div id="navbar" ng-controller="NavbarCtrl" class="navbar clearfix">
 		<div class="navbar__logo">
 			<a ng-click="navigateTo('hero')">
-				<img id="navbar__logo__light" src="assets/logo_mookie.svg"/>
-				<img id="navbar__logo__dark" src="assets/logo_dark.svg"/>
+				<img id="navbar__logo__light" src="assets/logo_knockout_pink.svg"/>
+				<img id="navbar__logo__dark" src="assets/logo_dark_pink.svg"/>
 			</a>
 		</div>
 
@@ -43,22 +43,28 @@
 				<i id="hamburger-icon" class="fa fa-bars navbar__menu__hamburger__icon"></i>
 				<div id="hamburger-content" class="navbar__menu__hamburger__content">
 					<ul>
+						<a ng-click="navigateTo('philosophy')"><li>Philosophy</li></a>
+						<a ng-click="navigateTo('services')"><li>Services</li></a>
 						<a ng-click="navigateTo('team')"><li>Team</li></a>
-						<a ng-click="navigateTo('contact')"><li>Contact</li></a>
 					</ul>
 				</div>
 			</div>
 			<div class="navbar__menu__normal">
-				<a class="navbar__menu__link link__1" ng-click="navigateTo('services')">Services</a>
+				<a class="navbar__menu__link link__1" ng-click="navigateTo('philosophy')">Philosophy</a>
 				<span class="highlight1"></span>
-				<a class="navbar__menu__link link__2" ng-click="navigateTo('team')">Team</a>
+				<a class="navbar__menu__link link__2" ng-click="navigateTo('services')">Services</a>
 				<span class="highlight2"></span>
+				<a class="navbar__menu__link link__3" ng-click="navigateTo('team')">Team</a>
+				<span class="highlight3"></span>
 <!-- 				<a class="navbar__menu__link link__3" ng-click="navigateTo('contact')">Contact</a>
 				<span class="highlight3"></span> -->
 			</div>
 		</div>
-		<div class="contact__email">
-				<p>mookiedigital@gmail.com</p>
+		<div class="contact contact__email">
+			<p>hello@mookie.io</p>
+		</div>
+		<div class="contact contact__phone">
+			<p>(678) 756-2770</p>
 		</div>
 	</div>
 
