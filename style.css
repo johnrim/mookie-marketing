@@ -119,11 +119,11 @@ a:hover {
 
 .navbar__menu__normal span {
 	display: none;
-	height: 18px;
+	height: 3px;
 	background-color: #ED217C;
 	z-index: -1;
 	position: absolute;
-	top: 30px;
+	top: 43px;
 }
 
 .navbar__menu__normal span.highlight1{
@@ -327,6 +327,10 @@ a:hover {
 	color: #1F1F1F;
 }
 
+.services h4 {
+	margin-top: 1em;
+}
+
 .services .services__content {
 	width: 100%;
 	margin-top: 2em;
@@ -373,6 +377,14 @@ a:hover {
 .services .overlay li {
 	font-family: 'Proxima Nova Bold';
 	font-size: 1em;
+}
+
+.services figcaption span.pricing {
+	display: block;
+	font-family: 'Proxima Nova';
+	font-size: .85em;
+	text-align: right;
+	font: italic;
 }
 
 .services .overlay {
@@ -489,14 +501,14 @@ a:hover {
 .footer {
 	background-color: #1F1F1F;
 	padding: 5px 60px;
-	height: 10rem;
+	height: 5rem;
 }
 
 .footer__logo {
 	height: 40px;
 	width: auto;
 	float: left;
-	bottom: -100px;
+	bottom: -15px;
 	position: relative;
 }
 
@@ -505,7 +517,7 @@ a:hover {
 	color: #FFF;
 	float: right;
 	margin-top: 8px;
-	bottom: -100px;
+	bottom: -15px;
 	position: relative;
 }
 
