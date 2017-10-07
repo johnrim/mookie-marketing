@@ -84,22 +84,17 @@
 		font-size: .8em;
 	}
 
-}
-
-@media(max-width: 850px) {
-	.modal {
-		width: 70%;
+	.team h5 {
+		font-size: 1.125em;
+	}
+	
+	.team h6, .team a {
+		font-size: .875em;
 	}
 }
 
 @media(max-width: 800px) {
-	.one-third {
-		max-width: 50%;
-	}
 
-	.team .one-third {
-		height: 650px;
-	}
 }
 
 @media(max-width: 760px) {
@@ -185,10 +180,18 @@
 	#navbar__logo__dark {
 		height: 30px;
 	}
+
+
 }
 
 @media(max-width: 600px) {
-
+	.team h5 {
+		font-size: 1em;
+	}
+	
+	.team h6, .team a {
+		font-size: .8em;
+	}
 }
 
 @media(max-width: 550px) {
@@ -206,6 +209,14 @@
 
 	.services article span.subheading{
 		font-size: 1.5em;
+	}
+
+	.one-fourth {
+		max-width: 50%;
+	}
+
+	.team {
+		padding-bottom: 1em;
 	}
 }
 
