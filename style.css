@@ -288,52 +288,85 @@ a:hover {
 /* Philosophy Section */
 .philosophy {
 	width: 100%;
-	background-color: #F4F6F8;
-	padding: 2em 60px 3em 60px;
+	background-color: #FFF;
+	padding: 4em 60px 6em 60px;
 	border-bottom: 1px solid #1F1F1F;
 	text-align: center;
 }
 
 .philosophy h1, .philosophy h2, .philosophy h3, .philosophy h4 {
-	color: #1F1F1F;
+	color: #1f1f1f;
 }
 
 .philosophy article {
 	margin-top: 2em;
+	text-align: center;
+}
+
+.philosophy h4 {
+	font-family: 'Proxima Nova Light';
+	letter-spacing: 1px;
 	text-align: left;
 }
 
 .divider {
 	display: inline-block;
-	margin-top: 2em;
+	margin-top: 1em;
 	background-color: #ED217C;
 	width: 30em;
 	height: .3em;
 }
 
-.philosophy h4:nth-child(2), .philosophy h4:nth-child(3), .philosophy h4:nth-child(4) {
+.philosophy .divider {
+	width: 386px;
+}
+
+.philosophy h4:nth-child(2), .philosophy h4:nth-child(3) {
 	margin-top: 1em;
+}
+
+.philosophy h4:nth-child(3) {
+	width: 280px;
+	float: left;
+}
+
+.philosophy img {
+	width: 6em;
+	position: relative;
+	/*margin-top: .75em;*/
+	top: .5em;
+	left: .5em;
 }
 
 /* Services Section */
 .services {
 	width: 100%;
-	background-color: #F4F6F8;
+	background-color: #1f1f1f;
 	padding: 2em 0 3em 0;
 	text-align: center;
 }
 
-.services h1, .services h2, .services h4 {
-	color: #1F1F1F;
+.services h1, .services h2 {
+	color: #fff;
 }
 
 .services h4 {
-	margin-top: 1em;
+	color: #1f1f1f;
+}
+
+.services .divider {
+	width: 220px;
+}
+
+.services h4 {
+	margin-top: 2em;
+	color: #fff;
+	/*margin-top: 2em;*/
 }
 
 .services .services__content {
 	width: 100%;
-	margin-top: 2em;
+	/*margin-top: 2em;*/
 }
 
 .services .services__card {
@@ -347,26 +380,39 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	text-align: left;
-	color: #FFF;
+	color: #1f1f1f;
 	padding: 1em 2em;
+	/*border-top: 10px solid #ED217C;*/
+	border-bottom: 4px solid #fff;
+}
+
+.services img {
+	/*height: auto;*/
+	width: 25px;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
 }
 
 .services span.heading {
 	display: block;
 	font-family: 'Proxima Nova Bold';
 	font-size: 3.5em;
+	/*color: #1f1f1f;*/
 }
 
 .services article span.subheading {
 	display: block;
 	font-family: 'Proxima Nova Bold';
 	font-size: 2em;
+	/*color: #1f1f1f;*/
 }
 
 .services figcaption span.subsubheading {
 	display: block;
 	font-family: 'Proxima Nova Bold';
 	font-size: 1.275em;
+	color: #ED217C;
 }
 
 .services .overlay ul {
@@ -385,14 +431,15 @@ a:hover {
 	font-size: .85em;
 	text-align: right;
 	font: italic;
+	color: #ED217C;
 }
 
 .services .overlay {
 	opacity: 0;
 	display: block;
-	background-color: #ED217C;
+	background-color: #1f1f1f;
 	text-align: left;
-	color: #FFF;
+	color: #fff;
 	position: absolute;
 	top: .5em;
 	left: .5em;
@@ -403,7 +450,7 @@ a:hover {
 }
 .services__content .services__card:hover .overlay {
 	opacity: 1;
-	box-shadow: 0px 12px 12px rgba(0,0,0,.5);
+	/*box-shadow: 0px 12px 12px rgba(0,0,0,.5);*/
 	-webkit-transition: all 0.1s ease-in-out;
   	-moz-transition: all 0.1s ease-in-out;
   	-o-transition: all 0.1s ease-in-out;
@@ -421,6 +468,10 @@ a:hover {
 
 .team h1 {
 	text-align: center;
+}
+
+.team .divider {
+	width: 140px;
 }
 
 .team .team__content {

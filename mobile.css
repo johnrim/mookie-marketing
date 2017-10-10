@@ -53,6 +53,18 @@
 	.services article span.subheading, h3 {
 		font-size: 1.5em;
 	}
+	
+	.philosophy .divider {
+		width: 344px;
+	}
+
+	.services .divider {
+		width: 180px;
+	}
+
+	.team .divider {
+		width: 120px;
+	}
 
 	.hero__text img {
 		margin-top: 120px;
@@ -68,12 +80,9 @@
 }
 
 @media(max-width: 900px) {
-	.services span.heading, h1 {
-		font-size: 2.875em;
-	}
 
-	.services article span.subheading, h3 {
-		font-size: 1.5em;
+	.navbar__menu a.navbar__menu__link {
+		font-size: 1em;
 	}
 
 	.navbar .contact {
@@ -93,8 +102,46 @@
 	}
 }
 
-@media(max-width: 800px) {
+@media(max-width: 860px) {
+	.navbar .contact {
+		margin-right: 1em;
+	}
 
+	.navbar__menu__normal a:nth-child(3), .navbar__menu__normal a:nth-child(5), .navbar__menu__normal a:nth-child(7) {
+		margin-left: 1rem;
+	}
+
+	.services span.heading, h1 {
+		font-size: 2.125em;
+	}
+
+	.services article span.subheading, h3 {
+		font-size: 1.375em;
+	}
+	
+	.philosophy .divider {
+		width: 244px;
+	}
+
+	.services .divider {
+		width: 134px;
+	}
+
+	.team .divider {
+		width: 92px;
+	}
+
+	.hero__text {
+		padding-top: 140px;
+	}
+
+	.hero__text img {
+		margin-top: 80px;
+	}
+
+	.hero {
+		height: 400px;
+	}
 }
 
 @media(max-width: 760px) {
@@ -111,23 +158,36 @@
 		margin-top: .5em;
 	}
 
-	.services span.heading, h1 {
-		font-size: 2.125em;
-	}
 
-	.services article span.subheading, h3 {
-		font-size: 1.375em;
-	}
-
-	.hero {
-		height: 375px;
-	}
-	
-	.hero__text {
+/*	.hero__text {
 		padding-top: 140px;
 	}
 	.hero__text img {
 		margin-top: 80px;
+	}*/
+}
+
+@media(max-width: 736px) {
+	.services .services__card {
+		height: auto;
+	}
+
+	.services article{
+		height: 100px;
+	}
+
+	.services .overlay {
+		opacity: 1;
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: none;
+	}
+	
+	.services__card .overlay .heading {
+		display: none;
 	}
 }
 
@@ -141,23 +201,20 @@
 	}
 
 	.hero__text {
-		padding-top: 120px;
+		padding-top: 100px;
 	}
 	.hero__text img {
 		margin-top: 60px;
 		width: 5em;
 	}
 
-}
-
-@media(max-width: 675px) {
-}
-
-@media(max-width: 617px) {
-	.hero .narrow-container {
-		padding: 0px;
+	.hero {
+		height: 324px;
 	}
 
+}
+
+@media(max-width: 674px) {
 	.services span.heading, h1 {
 		font-size: 1.875em;
 	}
@@ -166,9 +223,39 @@
 		font-size: 1.25em;
 	}
 
-	.divider {
-		width: 300px;
+	.philosophy h4 {
+		font-size: 1.125em;
 	}
+
+	.philosophy img {
+		width: 5.5em;
+		left: 0;
+		top: 2em;
+	}
+
+	.extra-narrow-container {
+		width: 320px;
+	}
+
+	.hero .narrow-container {
+		padding: 0px;
+	}
+
+	.philosophy .divider {
+		width: 204px;
+	}
+	
+	.services .divider {
+		width: 120px;
+	}
+
+	.team .divider {
+		width: 80px;
+	}
+}
+
+@media(max-width: 617px) {
+
 
 	.navbar .contact {
 		margin-right: 1em;
@@ -180,8 +267,6 @@
 	#navbar__logo__dark {
 		height: 30px;
 	}
-
-
 }
 
 @media(max-width: 600px) {
@@ -203,12 +288,16 @@
 		width: 100%;
 	}
 
+	.hero__text {
+		padding-top: 80px;
+	}
+
 	.services span.heading{
-		font-size: 2.875em;
+		font-size: 2.5em;
 	}
 
 	.services article span.subheading{
-		font-size: 1.5em;
+		font-size: 1.125em;
 	}
 
 	.one-fourth {
@@ -218,12 +307,13 @@
 	.team {
 		padding-bottom: 1em;
 	}
+
+	.services article {
+		height: 120px;
+	}
 }
 
 @media(max-width: 532px) {
-	.thank-you .narrow-container {
-		padding: 0px 30px;
-	}
 }
 
 @media(max-width: 520px) {
@@ -287,10 +377,6 @@
 	.hero__text button {
 		font-size: 16px;
 	}
-
-	.divider {
-		width: 250px;
-	}
 	
 	.philosophy {
 		padding-left: 16px;
@@ -305,11 +391,7 @@
 @media(max-width: 400px) {
 	.hero__text h1 {
 		font-size: 30px;
-		margin-bottom: 30px;
 }
 
-@media(max-width: 330px) {
-	.team .one-third {
-		height: 610px;
-	}
+@media(max-width: 390px) {
 }
