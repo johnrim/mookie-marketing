@@ -1,4 +1,4 @@
-# Deploying to Firebase server.
+# Deploying to Firebase server
 
 Push changes to Git BEFORE pushing to the firebase server.
 
