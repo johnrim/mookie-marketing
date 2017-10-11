@@ -1,4 +1,4 @@
-# mookie-marketing
+# Deploying to Firebase server.
 
 Push changes to Git BEFORE pushing to the firebase server.
 
@@ -21,3 +21,7 @@ Push changes to Git BEFORE pushing to the firebase server.
 2. run `firebase init`
 3. select `hosting` using arrow keys and enter key
 4. run `firebase deploy`
+
+# CDN for images
+
+## Stored and distributed by AWS S3+Cloudfront under hello@mookie.io
