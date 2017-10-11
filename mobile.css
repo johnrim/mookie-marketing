@@ -227,10 +227,9 @@
 		font-size: 1.125em;
 	}
 
-	.philosophy img {
-		width: 5.5em;
-		left: 0;
-		top: 2em;
+	.philosophy article img {
+		width: 3em;
+		margin-top: 1em;
 	}
 
 	.extra-narrow-container {
@@ -281,10 +280,6 @@
 
 @media(max-width: 550px) {
 	.one-half {
-		width: 100%;
-	}
-
-	.one-fourth {
 		width: 100%;
 	}
 

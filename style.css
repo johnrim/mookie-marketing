@@ -305,7 +305,7 @@ a:hover {
 
 .philosophy h4 {
 	font-family: 'Proxima Nova Light';
-	letter-spacing: 1px;
+	letter-spacing: .75px;
 	text-align: left;
 }
 
@@ -332,8 +332,6 @@ a:hover {
 
 .philosophy img {
 	width: 6em;
-	position: relative;
-	/*margin-top: .75em;*/
 	top: .5em;
 	left: .5em;
 }
@@ -342,7 +340,7 @@ a:hover {
 .services {
 	width: 100%;
 	background-color: #1f1f1f;
-	padding: 2em 0 3em 0;
+	padding: 4em 0 6em 0;
 	text-align: center;
 }
 
@@ -462,7 +460,7 @@ a:hover {
 .team {
 	width: 100%;
 	background-color: #fff;
-	padding: 2em 0 3em 0;
+	padding: 4em 0 6em 0;
 	text-align: center;
 }
 
