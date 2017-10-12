@@ -141,7 +141,7 @@ a:hover {
 	margin-left: -44px;
 }
 
-.navbar a.navbar__menu__link--change-color, .navbar .contact p.navbar__menu__link--change-color  {
+.navbar a.navbar__menu__link--change-color, .navbar .contact p.navbar__menu__link--change-color, .navbar .contact p.navbar__menu__link--change-color a  {
 	color: #1F1F1F!important;
 }
 
