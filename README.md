@@ -24,4 +24,4 @@ Push changes to Git BEFORE pushing to the firebase server.
 
 # CDN for images
 
-Stored and distributed by AWS S3+Cloudfront under hello@mookie.io
+Images now hosted by Firebase hosting.
