@@ -11,9 +11,13 @@ Push changes to Git BEFORE pushing to the firebase server.
 5. `Y`
 6. Browser should open with google auth page. Login with rob@mookie.io
 7. Once login is successful, return to terminal
-8. while inside local `mookie-marketing` directory, run `firebase init`
-9. select `hosting` using arrow keys and enter key
-10. run `firebase deploy`
+8. while inside local `mookie-marketing` directory, run `firebase serve` to check the site locally on localhost: 5000
+9. run `firebase init`
+10. select `hosting` using arrow keys, spacebar, and enter key
+11. confirm public directory as `/`
+12. do not run as SPA
+13. DO NOT overwrite index.html file
+14. run `firebase deploy`
 
 ## Non-first time:
 
