@@ -5,7 +5,7 @@ Push changes to Git BEFORE pushing to the firebase server.
 ## First time firebase-use:
 
 1. Open terminal
-2. run `npm install -global firebase-tools~
+2. run `npm install -global firebase-tools`
 3. move into your local `mookie-marketing` directory
 4. `firebase login`
 5. `Y`
